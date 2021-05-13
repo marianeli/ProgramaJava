@@ -13,7 +13,7 @@ Java
 ### IDE: 
 NetBeans     
 
-**Para acessar a tela de cadastro, precisa criar a tabela no banco**
+**Para acessar a tela de cadastro, precisa criar a tabela no banco (script da tabela) **
 
 use projetojava;
 CREATE TABLE `anuncio` (
@@ -32,14 +32,15 @@ CREATE TABLE `anuncio` (
 
 ![image](https://user-images.githubusercontent.com/77024829/118174235-f2b8d380-b404-11eb-9448-479bbe0d5ab6.png)
 
-**Para cadastrar os anúncios na tela "Cadastrar anúncio**
+**Para cadastrar os anúncios na tela "Cadastrar anúncio"**
 
 ![image](https://user-images.githubusercontent.com/77024829/118174477-40cdd700-b405-11eb-83ea-5b88902bee8d.png)
 
-**Para pesquisar os anúncios cadastrados em "Relatório de anúncios**
+**Para pesquisar os anúncios cadastrados em "Relatório de anúncios" **
 
 ![image](https://user-images.githubusercontent.com/77024829/118175028-f1d47180-b405-11eb-8226-76662831976b.png)
 
+**Para mostrar os anúncios cadastrados clica em "Pesquisar" **
 
 ![image](https://user-images.githubusercontent.com/77024829/118174812-ac17a900-b405-11eb-928c-f183fd6f22db.png)
 
