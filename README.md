@@ -1,6 +1,6 @@
 ## SISTEMA CADASTRO DE ANÚNCIOS
   
-### O sistema faz cadastro de anúncios, Listagem dos dados(relatório dos anúncios).
+### O sistema faz cadastro de anúncios, Listagem dos dados (relatório dos anúncios).
 
 ## Tecnologia Ultilizada:
 
@@ -13,7 +13,7 @@ Java
 ### IDE: 
 NetBeans     
 
-**Para acessar a tela de cadastro, precisa criar a tabela no banco (script da tabela) **
+**Para acessar a tela de cadastro, precisa criar a tabela no banco MYSQL(script da tabela) **
 
 use projetojava;
 CREATE TABLE `anuncio` (
