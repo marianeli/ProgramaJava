@@ -1,6 +1,6 @@
-## SISTEMA DE CADASTRO DE PESSOAS
+## SISTEMA CADASTRO DE ANÚNCIOS
   
-### O sistema faz cadastro, Listagem de dados(falta finalisar).
+### O sistema faz cadastro de anúncios, Listagem dos dados(relatório dos anúncios).
 
 ## Tecnologia Ultilizada:
 
@@ -11,41 +11,36 @@ MYSQL
 Java
 
 ### IDE: 
-NetBeans   
+NetBeans     
 
+**Para acessar a tela de cadastro, precisa criar a tabela no banco**
 
-### Validações :
-
-O sistema conta com validações , que foram feita ultilizando Exceptions Personalizadas.
-Dentre elas: Verifica o cadastro dos dados registrado no banco.  
-Verifica se os campos para cadastra um cliente foram todos preenchidos   
-
-**Para acessar a tela de cadastro na pasta > dist > ProjetoTreinamento.jar
-
-As tabelas criadas no banco:(Scrip da tabelas)
-
-CREATE TABLE `usuario` (
+use projetojava;
+CREATE TABLE `anuncio` (
   `id` bigint(10) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `sobrenome` varchar(255) DEFAULT NULL,
+  `nome_anuncio` varchar(255) DEFAULT NULL,
+  `cliente` varchar(255) DEFAULT NULL,
+  `dtInicio` varchar(100) DEFAULT NULL,
+  `dtTermino` varchar(100) DEFAULT NULL,
+  `valor` double(15,2) DEFAULT NULL,
+  `visualizacao` integer(10) DEFAULT NULL,
+  `cliques` integer(10) DEFAULT NULL,
+  `compartilhamentos` integer(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 
+**Para acessar a tela de cadastro, no NetBeans na pasta src > gui > TelaPrincipal**
 
-CREATE TABLE `salas` (
-  `idsala` bigint(10) NOT NULL AUTO_INCREMENT,
-  `sala` varchar(255) DEFAULT NULL,
-  `idusuario` bigint(10) DEFAULT NULL,
-  PRIMARY KEY (`idsala`),
-  KEY `fk_usuario` (`idusuario`),
-  CONSTRAINT `fk_usuario` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`id`)
+![image](https://user-images.githubusercontent.com/77024829/118174235-f2b8d380-b404-11eb-9448-479bbe0d5ab6.png)
 
-CREATE TABLE `espaco` (
-  `idespaco` bigint(10) NOT NULL AUTO_INCREMENT,
-  `nomeespaco` varchar(255) DEFAULT NULL,
-  `idusuario` bigint(10) DEFAULT NULL,
-  PRIMARY KEY (`idespaco`),
-  KEY `fk_usuario1` (`idusuario`),
-  CONSTRAINT `fk_usuario1` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`id`) 
+**Para cadastrar os anúncios na tela "Cadastrar anúncio**
 
+![image](https://user-images.githubusercontent.com/77024829/118174477-40cdd700-b405-11eb-83ea-5b88902bee8d.png)
+
+**Para pesquisar os anúncios cadastrados em "Relatório de anúncios**
+
+![image](https://user-images.githubusercontent.com/77024829/118175028-f1d47180-b405-11eb-8226-76662831976b.png)
+
+
+![image](https://user-images.githubusercontent.com/77024829/118174812-ac17a900-b405-11eb-928c-f183fd6f22db.png)
 
 
