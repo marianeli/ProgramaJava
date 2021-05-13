@@ -15,7 +15,7 @@ NetBeans
 
 **Para acessar a tela de cadastro, precisa criar a tabela no banco MYSQL(script da tabela) **
 
-**use projetojava;
+use projetojava;
 CREATE TABLE `anuncio` (
   `id` bigint(10) NOT NULL AUTO_INCREMENT,
   `nome_anuncio` varchar(255) DEFAULT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE `anuncio` (
   `cliques` integer(10) DEFAULT NULL,
   `compartilhamentos` integer(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;**
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 **Para acessar a tela de cadastro, no NetBeans na pasta src > gui > TelaPrincipal**
 
