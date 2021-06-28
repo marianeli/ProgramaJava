@@ -1,6 +1,6 @@
 ## SISTEMA CADASTRO DE ANÚNCIOS
   
-### O sistema faz cadastro de anúncios, Listagem dos dados (relatório dos anúncios).
+### O sistema desktop faz cadastro de anúncios, Listagem dos dados (relatório dos anúncios).
 
 ## Tecnologia Ultilizada:
 
